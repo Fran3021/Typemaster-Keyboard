@@ -1,2 +1,27 @@
-// import roboto font
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+// importamos la fuentes
+@font-face {
+    font-family: 'Barlow';
+    src: url('../../fonts/');
+    src: url('../../fonts/?#iefix') format('embedded-opentype'),
+        url('../../fonts/Barlow-Medium.woff2') format('woff2'),
+        url('../../fonts/Barlow-Medium.woff') format('woff'),
+        url('../../fonts/Barlow-Medium.ttf') format('truetype'),
+        url('../../fonts/Barlow-Medium.svg#Barlow-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../../fonts/Barlow-Black.eot');
+    src: url('../../fonts/Barlow-Black.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Barlow-Black.woff2') format('woff2'),
+        url('../../fonts/Barlow-Black.woff') format('woff'),
+        url('../../fonts/Barlow-Black.ttf') format('truetype'),
+        url('../../fonts/Barlow-Black.svg#Barlow-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

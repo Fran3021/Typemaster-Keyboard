@@ -4,13 +4,13 @@
 
 <head>
   <!--Aqui el titulo para los buscadores-->
-  <title></title>
+  <title>Proyecto TypeMaster</title>
   
   <!--Descripcion que sale al buscarlo en el navegador-->
-  <meta name="description" content="">
+  <meta name="description" content="project">
 
   <!--Palabras claves para los buscadores en navegadores-->
-  <meta name="keywords" content="">
+  <meta name="keywords" content="project">
 
   <!--Autor de la pagina-->
   <meta name="autor" content="Fran">
@@ -19,7 +19,7 @@
   <script defer type="module" src="/main.js"></script>
 
   <!--Favicon de la pagina(icono)-->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="javascript.svg" type="image/x-icon">
 
   <!--Codificacion-->
   <meta charset="UTF-8">
@@ -32,19 +32,79 @@
 </head>
 
 <body>
-  <header>
+  <header class="header-principal">
+    <div class="container">
+      <a href="#">
+        <img src="icons/logo-tm.png" alt="logo-principal">
+      </a>
 
+      <nav class="nav-principal">
+        <ul>
+          <li><a class="button-header" href="#">PRE-ORDER NOW</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
+    <div class="hero">
+      <div class="container">
+        <div class="hero__title">
+          <h1>TYPEMASTER KEYBOARD</h1>
+          <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
+          <nav class="nav-hero">
+            <ul>
+              <li>
+                <a class="button-hero" href="#">PRE-ORDER NOW</a>
+              </li>
+            </ul>
+            <span>RELEASE ON 5/27</span>
+          </nav>
+          <img class="image-title" src="img/image-keyboard-hero.png" alt="keyboard">
+        </div>
+        <div class="hero__subtitle">
+          <section class="image-subtitle">
+            <img src="img/image-keyboard-orange.png" alt="keyboard">
+            <img src="img/image-keyboard-black.png" alt="keyboard">
+          </section>
+          <section class="description-subtitle">
+            <h2>MECHANICAL WIRELESS KEYBOARD</h2>
+            <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.</p>
+          </section>
+        </div>
+      </div>
+    </div>
 
+    <div class="stats">
+      <div class="container">
+        <article class="stats-spec">
+          <span class="stats-icon"><img src="icons/logo-monitor.svg" alt="logo-monitor"></span>
+          <h3 class="stats-title">HIGHLY COMPATIBLE</h3>
+          <p class="stats-description">Easy to use and works well with all major computer brands, gaming consoles and mobile devices. Plug & play, no installation or driver needed.</p>
+        </article>
+        <article class="stats-spec">
+          <span class="stats-icon"><img src="icons/logo-bluetooth.svg" alt="logo-bluetooth"></span>
+          <h3 class="stats-title">WIRELESS WITH BLUETOOTH</h3>
+          <p class="stats-description">Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug the unifying receiver into your computer.</p>
+        </article>
+        <article class="stats-spec">
+          <span class="stats-icon"><img src="icons/logo-bateria.svg" alt="logo-bateria"></span>
+          <h3 class="stats-title">HIGH CAPACITY BATTERY</h3>
+          <p class="stats-description">Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. Enjoy 40 hours of usage time between charges.</p>
+        </article>
+        <article class="stats-spec">
+          <span class="stats-icon"><img src="icons/logo-bombilla.svg" alt="logo-bombilla"></span>
+          <h3 class="stats-title">RGB BLACKLIT MODES</h3>
+          <p class="stats-description">Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps you type in low light conditions.</p>
+        </article>
+      </div>
+    </div>
   </main>
-  <aside>
-    
-  </aside>
-  <hr>
-  <footer> 
-    <p>&copy; 2024 Todos los derechos resevados</p>
+  <footer class="footer-principal" >
+    <div class="container">
+      <p class="footer-parrafo" ><strong>Typemaster 2021</strong>  |  All Rights Reserved</p>
+    </div> 
   </footer>
 </body>
 </html>
+
 

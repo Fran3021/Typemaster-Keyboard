@@ -1,2 +1,18 @@
-
+.header-principal{
+    padding-top: 25px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-principal{
+            ul{
+                @include reset-list;
+                .button-header{
+                    @include button;
+                    padding: 11px 14px;
+                }
+            }
+        }
+    }
+}
 

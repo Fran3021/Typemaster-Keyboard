@@ -1,0 +1,34 @@
+.stats{
+    .stats-spec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 64px;
+        .stats-icon{
+            background-color: $orange;
+            padding: 22px 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            border-radius: 16px;
+        }
+        .stats-title{
+            font-size: 24px;
+            line-height: 28px;
+            color: $blue-dark;
+            width: 45%;
+            text-align: center;
+            font-weight: 900;
+        }
+        .stats-description{
+            font-size: 16px;
+            line-height: 26px;
+            color: $blue-light;
+            text-align: center;
+        }
+    }
+}
