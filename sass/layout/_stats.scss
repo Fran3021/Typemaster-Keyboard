@@ -1,4 +1,20 @@
 .stats{
+    margin-bottom: 96px;
+    @include breakpoint(tablet){
+        margin-bottom: 142px;
+    }
+    .container{
+        @include breakpoint(tablet){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        @include breakpoint(desktopxl){
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+    }
     .stats-spec{
         display: flex;
         flex-direction: column;
@@ -6,6 +22,9 @@
         align-items: center;
         gap: 30px;
         margin-bottom: 64px;
+        @include breakpoint(tablet){
+            align-items: flex-start;
+        }
         .stats-icon{
             background-color: $orange;
             padding: 22px 26px;
@@ -23,12 +42,26 @@
             width: 45%;
             text-align: center;
             font-weight: 900;
+            @include breakpoint(tablet){
+                text-align: left;
+                width: 60%;
+            }
+            @include breakpoint(desktopxl){
+                width: 80%;
+            }
         }
         .stats-description{
             font-size: 16px;
             line-height: 26px;
             color: $blue-light;
             text-align: center;
+            @include breakpoint(tablet){
+                text-align: left;
+                width: 82%;
+            }
+            @include breakpoint(desktopxl){
+                width: 90%;
+            }
         }
     }
 }

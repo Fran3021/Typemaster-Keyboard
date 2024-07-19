@@ -10,6 +10,15 @@
                 .button-header{
                     @include button;
                     padding: 11px 14px;
+                    @include breakpoint(tablet){
+                        @include button
+                    }
+                    @include breakpoint(desktopxl){
+                        &:hover{
+                            background-color: $blue-dark;
+                            color: $white;
+                        }
+                    }
                 }
             }
         }

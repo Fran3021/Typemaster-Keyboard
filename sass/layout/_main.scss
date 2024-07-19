@@ -2,6 +2,17 @@
     padding-top: 64px;
     &__title{
         position: relative;
+        @include breakpoint(tablet){
+            display: flex;
+            @include breakpoint(tablethorizontal){
+                position: static;
+                display: flex;
+                justify-content: space-between;
+            }
+            @include breakpoint(desktopxl){
+                margin-bottom: 30px;
+            }
+        }
         h1{
             font-size: 48px;
             font-weight: 900;
@@ -15,6 +26,9 @@
             line-height: 26px;
             color: $blue-light;
             margin-bottom: 32px;
+            @include breakpoint(desktopxl){
+                width: 75%;
+            }
         }
         .nav-hero{
             display: flex;
@@ -28,6 +42,16 @@
                     color: $white;
                     background-color: $orange;
                     padding: 11px 14px;
+                    @include breakpoint(tablet){
+                        @include button;
+                        background-color: $orange;
+                        color: $white;
+                    }
+                    @include breakpoint(desktopxl){
+                        &:hover{
+                            background-color: $orange-light;
+                        }
+                    }
                 }
             }
             span{
@@ -36,23 +60,110 @@
                 color: $blue-light;
             }
         }
-        .image-title{
+        .mobile-1{
             position: relative;
             right: -40px;
             margin-bottom: 24px;
+            @include breakpoint(tablet){
+                display: none;
+            }
+        }
+        .tablet-1{
+            display: none;
+            @include breakpoint(tablet){
+                display: block;
+                position: relative;
+                right: -40px;
+                top: -30px;
+                @include breakpoint(tablethorizontal){
+                    position: static;
+                    margin-bottom: 24px;
+                }
+                @include breakpoint(desktopxl){
+                    display: none;
+                }
+            }
+        }
+        .desktop-1{
+            display: none;
+            @include breakpoint(desktopxl){
+                display: block;
+            }
         }
     }
     &__subtitle{
         position: relative;
         margin-bottom: 120px;
+        @include breakpoint(tablet){
+            display: flex;
+            flex-direction: column;
+            position: static;
+        }
+        @include breakpoint(desktopxl){
+            display: flex;
+            flex-direction: row;
+            gap: 125px;
+        }
         .image-subtitle{
             display: flex;
             gap: 24px;
             position: relative;
             left: -30px;
             margin-bottom: 75px;
+            @include breakpoint(tablet){
+                .mobile-2{
+                    display: none;
+                }
+                .mobile-3{
+                    display: none;
+                }
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: static;
+            .tablet-2{
+                display: none;
+                @include breakpoint(tablet){
+                    display: block;
+                }
+                @include breakpoint(desktopxl){
+                    display: none;
+                }
+            }
+            .desktop-2{
+                display: none;
+                @include breakpoint(desktopxl){
+                    display: block;
+                }
+            }
+            .tablet-3{
+                display: none;
+                @include breakpoint(tablet){
+                    display: block;
+                }
+                @include breakpoint(desktopxl){
+                    display: none;
+                }
+            }
+            .desktop-3{
+                display: none;
+                @include breakpoint(desktopxl){
+                    display: block;
+                }
+            }
         }
         .description-subtitle{
+            @include breakpoint(tablet){
+                display: flex;
+                gap: 36px;
+            }
+            @include breakpoint(desktopxl){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
             h2{
                 font-size: 32px;
                 line-height: 36px;
@@ -61,14 +172,35 @@
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom: 24px;
+                @include breakpoint(tablet){
+                    text-align: left;
+                }
+                @include breakpoint(desktopxl){
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
             p{
                 font-size: 16px;
                 line-height: 26px;
                 color: $blue-light;
                 text-align: center;
+                @include breakpoint(tablet){
+                    text-align: left;
+                    width: 80%;
+                }
+                @include breakpoint(desktopxl){
+                    width: 100%;
+                }
             }
         }
+    }
+}
+
+main{
+    @include breakpoint(desktopxl){
+        background-image: url(../../img/rectangle-desktop-right.png), url(../../img/rectangle-desktop-left.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right top 65px, left bottom 570px;
     }
 }
