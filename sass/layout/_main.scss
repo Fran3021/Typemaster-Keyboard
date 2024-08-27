@@ -110,6 +110,10 @@
             position: relative;
             left: -30px;
             margin-bottom: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: static;
             @include breakpoint(tablet){
                 .mobile-2{
                     display: none;
@@ -118,10 +122,6 @@
                     display: none;
                 }
             }
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: static;
             .tablet-2{
                 display: none;
                 @include breakpoint(tablet){
